@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Елена Малова](https://up.htmlacademy.ru/adaptive/27/user/198989).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Думчев](https://up.htmlacademy.ru/adaptive/27/user/nikopol-fw).
 
 ---
 
