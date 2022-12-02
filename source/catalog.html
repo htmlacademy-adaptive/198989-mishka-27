@@ -177,5 +177,50 @@
         </section>
       </div>
     </footer>
+
+    <!-- Чтобы модальное окно не отображалось, необходимо удалить класс-модификатор modal-container--active -->
+    <div class="modal-container modal-container--active">
+      <section class="modal">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <fieldset class="modal__group">
+          <legend class="modal__group-title">Выберите размер:</legend>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <label class="modal__control">
+                <input
+                  class="visually-hidden modal__control-input"
+                  type="radio"
+                  name="size-group"
+                  value="s">
+                <span class="modal__control-mark"></span>
+                <span class="modal__control">S</span></label>
+            </li>
+            <li class="modal__item">
+              <label class="modal__control">
+                <input
+                  class="visually-hidden modal__control-input"
+                  type="radio"
+                  name="size-group"
+                  value="m">
+                <span class="modal__control-mark"></span>
+                <span class="modal__control">M</span></label>
+            </li>
+            <li class="modal__item">
+              <label class="modal__control">
+                <input
+                  class="visually-hidden modal__control-input"
+                  type="radio"
+                  name="size-group"
+                  value="l">
+                <span class="modal__control-mark"></span>
+                <span class="modal__control">L</span></label>
+            </li>
+          </ul>
+          <a class="modal__add button button--secondary" href="#">Добавить</a>
+        </fieldset>
+      </section>
+    </div>
+  </div>
+
   </body>
 </html>
