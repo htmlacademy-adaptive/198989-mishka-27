@@ -56,114 +56,183 @@
       </nav>
       <span class="header__remark header__remark--clipped">Бесплатная доставка по России</span>
     </header>
-    <main class="main-container">
-      <h1 class="visually-hidden">Магазин вязанных вещей на заказ.</h1>
-      <section class="products">
-        <h2 class="products__title">Милые штуки ручной<br>работы для дома</h2>
-        <ul class="products__list">
-          <li class="products__item">
-            <a class="products__accessory">Предметы интерьера</a>
-          </li>
-          <li class="products__item">
-            <a class="products__toys">Детские игрушки</a>
-          </li>
-        </ul>
-      </section>
-      <section class="promo">
-        <div class="promo__wrapper">
-          <h2 class="promo__title">Вязаные корзинки</h2>
-          <span class="promo__remark">Товар недели</span>
-          <div class="promo__description-wrapper">
-            <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-            <dl class="promo__list">
-              <div class="promo__item">
-                <dt class="promo__nomination">Цвет:</dt>
-                <dd class="promo__value">тиффани/серый</dd>
-              </div>
-              <div class="promo__item">
-                <dt class="promo__nomination">Диаметр:</dt>
-                <dd class="promo__value">25 см</dd>
-              </div>
-              <div class="promo__item">
-                <dt class="promo__nomination">Высота:</dt>
-                <dd class="promo__value">15 см</dd>
-              </div>
-            </dl>
+    <main class="main-container main-container--form">
+      <h1 class="visually-hidden">Форма отправки заказа.</h1>
+      <form class="main-container__form" action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="main-container__form-title">Вязание на заказ</h2>
+        <div class="main-container__form-wrapper">
+          <h2 class="visually-hidden">Выберите тип изделия.</h2>
+          <p class="main-container__form-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <div class="type-wrapper">
+            <h3 class="type-title">ТИП</h3>
+            <fieldset class="type">
+              <ul class="type__list">
+                <li class="type__item">
+                  <label class="control">
+                    <input
+                      class="visually-hidden control__input"
+                      type="radio"
+                      name="type__group"
+                      value="accessory">
+                    <span class="control__mark"></span>
+                    <span class="control__label">Аксессуар для интерьера</span></label>
+                </li>
+                <li class="type__item">
+                  <label class="control">
+                    <input
+                      class="visually-hidden control__input"
+                      type="radio"
+                      name="type__group"
+                      value="toy">
+                    <span class="control__mark"></span>
+                    <span class="control__label">Детская игрушка</span></label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
-          <img class="promo__image" src="img/catalog/triple-set.jpg" width="260" height="315" alt="Вязанные корзинки ручной работы разных цветов.">
-          <p class="promo__price">Цена: <span class="promo__price-value">990 руб.</span></p>
-          <a class="promo__order button" href="#">Заказать</a>
         </div>
-      </section>
-      <section class="about">
-        <div class="about__wrapper">
-          <h2 class="about__title">Коротко о нас:</h2>
-          <ul class="about__list">
-            <li class="about__item about__item--materials">
-              <p class="about__description">Экологически чистые материалы</p>
-            </li>
-            <li class="about__item about__item--style">
-              <p class="about__description">Скандинавский стиль по российской цене</p>
-            </li>
-            <li class="about__item about__item--likes">
-              <p class="about__description">Увеличивает лайки на фотографиях</p>
-            </li>
-            <li class="about__item about__item--handmade">
-              <p class="about__description">Связано вручную с любовью и умилением</p>
-            </li>
-            <li class="about__item about__item--support">
-              <p class="about__description">Поддержка отечественного производителя</p>
-            </li>
-            <li class="about__item about__item--gift">
-              <p class="about__description">Поставляется в подарочной упаковке</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="reviews__title">Отзывы</h2>
-          <a class="reviews__write button" href="#">Написать</a>
-          <ul class="reviews__list slider__list">
-            <li class="reviews__item slider__item">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-                у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <div class="reviews__author-info">
-                <cite class="reviews__author-name">Анастасия Красильникова</cite>
-                <span class="reviews__author-nickname">@misssssiskras</span>
-              </div>
-            </li>
-          </ul>
-          <button class="reviews__prev" type="button"><span class="visually-hidden">Предыдущий отзыв.</span></button>
-          <button class="reviews__next" type="button"><span class="visually-hidden">Следующий отзыв.</span></button>
-        </div>
-      </section>
-      <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <address class="contacts__address">
-          <div class="contacts__wrapper">
-            <span class="contacts__address-title">e-mail:</span>
-            <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <div class="main-container__form-wrapper">
+          <h2 class="visually-hidden">Выберите цвет изделия.</h2>
+          <h3 class="color-title">ЦВЕТ</h3>
+          <div class="color-wrapper">
+            <fieldset class="color">
+              <ul class="color__list">
+                <li class="color__item">
+                  <label class="control">
+                    <input
+                      class="visually-hidden control__input"
+                      type="checkbox"
+                      name="white"
+                      checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label">Белый</span></label>
+                </li>
+                <li class="color__item">
+                  <label class="control">
+                    <input
+                      class="visually-hidden control__input"
+                      type="checkbox"
+                      name="grey"
+                      checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label">Серый</span></label>
+                </li>
+                <li class="color__item">
+                  <label class="control">
+                    <input
+                      class="visually-hidden control__input"
+                      type="checkbox"
+                      name="tiffany"
+                      checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label">Тиффани</span></label>
+                </li>
+                <li class="color__item">
+                  <label class="control">
+                    <input
+                      class="visually-hidden control__input"
+                      type="checkbox"
+                      name="black"
+                      checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label">Черный</span></label>
+                </li>
+                <li class="color__item">
+                  <label class="control">
+                    <input
+                      class="visually-hidden control__input"
+                      type="checkbox"
+                      name="pink"
+                      checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label">Розовый</span></label>
+                </li>
+                <li class="color__item">
+                  <label class="control">
+                    <input
+                      class="visually-hidden control__input"
+                      type="checkbox"
+                      name="orange"
+                      checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label">Оранжевый</span></label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
-          <div class="contacts__wrapper">
-            <span class="contacts__address-title">адрес:</span>
-            <p class="contacts__address-text">г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</p>
-          </div>
-        </address>
-        <a class="contacts__write button" href="#">Напишите нам</a>
-        <div class="map">
-          <button class="map__toggle" type="button">
-            <span class="visually-hidden">Расположение магазина на карте.</span>
-            <img
-                class="map__toggle-image map__toggle-image--mobile"
-                src="img/map-pin.svg"
-                width="67"
-                height="100"
-                alt="Метка магазина.">
-          </button>
         </div>
-      </section>
+        <div class="main-container__form-wrapper">
+          <h2 class="visually-hidden">Укажите ваше полное имя.</h2>
+          <h3 class="name-title">ФИО</h3>
+          <fieldset class="name">
+            <p class="name__form">
+              <label for="first-name">Имя:</label>
+              <input
+                class="name__field"
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Введите ваше имя*"
+                required>
+            </p>
+            <p class="name__form">
+              <label for="second-name">Фамилия:</label>
+              <input
+                class="name__field"
+                type="text"
+                id="second-name"
+                name="second-name"
+                placeholder="Укажите фамилию*"
+                required>
+            </p>
+            <p class="name__form">
+              <label for="third-name">Фамилия:</label>
+              <input
+                class="name__field"
+                type="text"
+                id="third-name"
+                name="third-name"
+                placeholder="Отчество, если желаете">
+            </p>
+          </fieldset>
+        </div>
+        <div class="main-container__form-wrapper">
+          <h2 class="visually-hidden">Укажите ваши контактные данные.</h2>
+          <fieldset class="info">
+            <p class="info__form">
+              <label for="telephone">ТЕЛ</label>
+              <input
+                class="field field--tel"
+                type="tel"
+                id="telephone"
+                name="telephone"
+                placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                required>
+            </p>
+            <p class="info__form">
+              <label for="e-mail">E-MAIL</label>
+              <input
+                class="field"
+                type="email"
+                id="e-mail"
+                name="e-mail"
+                placeholder="Ваш Email*"
+                required>
+            </p>
+          </fieldset>
+        </div>
+        <div class="main-container__form-wrapper">
+          <h2 class="visually-hidden">Укажите дополнительную информацию по заказу.</h2>
+          <fieldset class="additionally">
+            <p class="additionally__group">
+              <label class="visually-hidden" for="additionally-text">Опишите все ваши пожелания к заказу.</label>
+              <textarea class="additionally__field field" rows="9" cols="9" name="additionally-text" id="additionally-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </p>
+          </fieldset>
+          <span class="main-container__legend">*Поля обязательны для заполнения</span>
+        </div>
+        <button class="main-container__order button" type="submit">Отправить заказ</button>
+      </form>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
@@ -218,51 +287,5 @@
         </div>
       </div>
     </footer>
-
-    <!-- Чтобы модальное окно не отображалось, необходимо удалить класс-модификатор modal-container- -active -->
-    <div class="modal-container modal-container--active">
-      <section class="modal">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="modal__group">
-            <legend class="modal__group-title">Выберите размер:</legend>
-            <ul class="modal__list">
-              <li class="modal__item">
-                <label class="modal__control">
-                  <input
-                    class="visually-hidden modal__control-input"
-                    type="radio"
-                    name="size-group"
-                    value="s">
-                  <span class="modal__control-mark"></span>
-                  <span class="modal__control">S</span></label>
-              </li>
-              <li class="modal__item">
-                <label class="modal__control">
-                  <input
-                    class="visually-hidden modal__control-input"
-                    type="radio"
-                    name="size-group"
-                    value="m">
-                  <span class="modal__control-mark"></span>
-                  <span class="modal__control">M</span></label>
-              </li>
-              <li class="modal__item">
-                <label class="modal__control">
-                  <input
-                    class="visually-hidden modal__control-input"
-                    type="radio"
-                    name="size-group"
-                    value="l">
-                  <span class="modal__control-mark"></span>
-                  <span class="modal__control">L</span></label>
-              </li>
-            </ul>
-            <button class="modal__add button button--secondary" type="submit">Добавить</button>
-          </fieldset>
-        </form>
-      </section>
-    </div>
-
   </body>
 </html>
