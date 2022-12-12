@@ -1,7 +1,7 @@
 .modal__title {
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: @color-dark;
   .normalize-title();
 }
 
@@ -22,10 +22,10 @@
 .modal__item {
   padding: 18px 32px;
   border: 2px solid rgba(68, 68, 68, 0.1);
-}
 
-.modal__item--current {
-  border-color: rgba(99, 209, 187, 1);
+  &--current {
+    border-color: rgba(99, 209, 187, 1);
+  }
 }
 
 .modal__control {
