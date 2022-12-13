@@ -1,0 +1,31 @@
+.products {
+  background-color: #ffffff;
+  background-image: url("../img/hero.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.products__title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  color: @color-dark;
+  .normalize-title();
+}
+
+.products__list {
+  .normalize-list();
+}
+
+.products__link {
+  .normalize-link();
+  display: block;
+  font-size: 19px;
+  color: #ffffff;
+  background-color: @color-accent;
+
+  &--secondary {
+    background-color: #56c3b2;
+  }
+}

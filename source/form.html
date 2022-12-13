@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
@@ -20,52 +21,55 @@
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
         <ul class="navigation__list site-list">
           <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
 
-            <ul class="site-list__catalog">
-              <li class="site-list__catalog__item site-list__catalog__item--clipped">
+            <ul class="site-list__catalog site-list__catalog--clipped">
+              <li class="site-list__catalog__item">
                 <a href="#">Новые поступления</a>
               </li>
-              <li class="site-list__catalog__item site-list__catalog__item--clipped">
+              <li class="site-list__catalog__item">
                 <a href="#">Распродажа</a>
               </li>
             </ul>
 
           </li>
           <li class="site-list__item">
-            <a href="form.html">Вязание на заказ</a>
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="navigation__list user-list">
           <li class="user-list__item">
-            <a class="user-list__item-search" href="#">
-              <svg class="user-list__item-search-icon" aria-hidden="true" focusable="false" width="18" height="18" fill="currentColor" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#000" d="m17.6932 16.0568-3.4773-3.4773C15.2386 11.25 15.75 9.6136 15.75 7.875 15.75 3.4773 12.2727 0 7.875 0S0 3.4773 0 7.875s3.4773 7.875 7.875 7.875c1.7386 0 3.375-.6136 4.7045-1.5341l3.4773 3.4773c.2046.2045.4091.3068.8182.3068.6136 0 1.125-.5114 1.125-1.125 0-.2045-.1023-.5114-.3068-.8182ZM2.25 7.875c0-3.0682 2.5568-5.625 5.625-5.625S13.5 4.8068 13.5 7.875 10.9432 13.5 7.875 13.5 2.25 10.9432 2.25 7.875Z" opacity=".2"/></svg>
-              <span class="visually-hidden">Поиск.</span>
+            <a class="user-list__item-link user-list__item-link--search" href="#">
+              <div class="user-list__wrapper">
+                <svg class="user-list__item-search-icon" aria-hidden="true" focusable="false" width="18" height="18" fill="currentColor" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#000" d="m17.6932 16.0568-3.4773-3.4773C15.2386 11.25 15.75 9.6136 15.75 7.875 15.75 3.4773 12.2727 0 7.875 0S0 3.4773 0 7.875s3.4773 7.875 7.875 7.875c1.7386 0 3.375-.6136 4.7045-1.5341l3.4773 3.4773c.2046.2045.4091.3068.8182.3068.6136 0 1.125-.5114 1.125-1.125 0-.2045-.1023-.5114-.3068-.8182ZM2.25 7.875c0-3.0682 2.5568-5.625 5.625-5.625S13.5 4.8068 13.5 7.875 10.9432 13.5 7.875 13.5 2.25 10.9432 2.25 7.875Z" opacity=".2"/></svg>
+                  <span class="visually-hidden">Поиск.</span>
+              </div>
+              Поиск по сайту
             </a>
           </li>
           <li class="user-list__item">
-            <a class="user-list__item-cart" href="#">
+            <a class="user-list__item-link user-list__item-link--cart" href="#">
               <div class="user-list__wrapper">
                 <svg class="cart-icon" aria-hidden="true" focusable="false" width="21" height="18" fill="currentColor" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#000" d="M20.1884 6.8572h-3.5507L13.1884.3809c-.2029-.381-.6087-.4761-1.0145-.2857-.4058.1905-.5072.5715-.3043.9524l3.1449 5.8096H5.7826l3.145-5.8096c.2028-.381 0-.7619-.3044-.9524-.4058-.1904-.8116 0-1.0145.2857L4.1594 6.8572H.8116C.4058 6.8572 0 7.1429 0 7.619c0 .381.3043.762.8116.762h.2029l.913 2.8571c-.2029.0952-.3043.2857-.3043.5714 0 .381.3043.6667.7101.6667L4.058 18h12.884l1.7247-5.5238c.4058 0 .7101-.2857.7101-.6667 0-.1905-.1014-.4762-.3043-.5714l.913-2.8572h.2029c.4058 0 .8116-.2857.8116-.7619 0-.4761-.4058-.7618-.8116-.7618Zm-4.5652 9.619H5.0725L3.855 12.381H16.942l-1.3188 4.0952Zm1.6232-5.5238H3.3478l-.8116-2.6667H18.058l-.8116 2.6667Z" opacity=".2"/></svg>
               </div>
-              Корзина: <span class="user-list__item-cart-value">пока пуста</span></a>
+              Корзина: <span class="user-list__item-cart">пока пуста</span></a>
           </li>
         </ul>
       </nav>
       <span class="header__remark header__remark--clipped">Бесплатная доставка по России</span>
     </header>
     <main class="main-container main-container--form">
-      <h1 class="visually-hidden">Форма отправки заказа.</h1>
+      <div class="main-container__zero zero">
+        <h1 class="zero__title">Вязание на заказ</h1>
+      </div>
       <form class="main-container__form" action="https://echo.htmlacademy.ru/" method="post">
-        <h2 class="main-container__form-title">Вязание на заказ</h2>
         <div class="main-container__form-wrapper">
-          <h2 class="visually-hidden">Выберите тип изделия.</h2>
           <p class="main-container__form-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <div class="type-wrapper">
-            <h3 class="type-title">ТИП</h3>
             <fieldset class="type">
+              <legend class="type__title">Тип</legend>
               <ul class="type__list">
                 <li class="type__item">
                   <label class="control">
@@ -75,7 +79,7 @@
                       name="type__group"
                       value="accessory">
                     <span class="control__mark"></span>
-                    <span class="control__label">Аксессуар для интерьера</span></label>
+                    Аксессуар для интерьера</label>
                 </li>
                 <li class="type__item">
                   <label class="control">
@@ -85,17 +89,16 @@
                       name="type__group"
                       value="toy">
                     <span class="control__mark"></span>
-                    <span class="control__label">Детская игрушка</span></label>
+                    Детская игрушка</label>
                 </li>
               </ul>
             </fieldset>
           </div>
         </div>
         <div class="main-container__form-wrapper">
-          <h2 class="visually-hidden">Выберите цвет изделия.</h2>
-          <h3 class="color-title">ЦВЕТ</h3>
           <div class="color-wrapper">
             <fieldset class="color">
+              <legend class="color__title">Цвет</legend>
               <ul class="color__list">
                 <li class="color__item">
                   <label class="control">
@@ -162,13 +165,12 @@
           </div>
         </div>
         <div class="main-container__form-wrapper">
-          <h2 class="visually-hidden">Укажите ваше полное имя.</h2>
-          <h3 class="name-title">ФИО</h3>
           <fieldset class="name">
+            <legend class="name__title">ФИО</legend>
             <p class="name__form">
-              <label for="first-name">Имя:</label>
+              <label class="name__label" for="first-name">Имя:</label>
               <input
-                class="name__field"
+                class="name__field field"
                 type="text"
                 id="first-name"
                 name="first-name"
@@ -176,9 +178,9 @@
                 required>
             </p>
             <p class="name__form">
-              <label for="second-name">Фамилия:</label>
+              <label class="name__label" for="second-name">Фамилия:</label>
               <input
-                class="name__field"
+                class="name__field field"
                 type="text"
                 id="second-name"
                 name="second-name"
@@ -186,9 +188,9 @@
                 required>
             </p>
             <p class="name__form">
-              <label for="third-name">Фамилия:</label>
+              <label class="name__label" for="third-name">Отчество:</label>
               <input
-                class="name__field"
+                class="name__field field"
                 type="text"
                 id="third-name"
                 name="third-name"
@@ -197,12 +199,11 @@
           </fieldset>
         </div>
         <div class="main-container__form-wrapper">
-          <h2 class="visually-hidden">Укажите ваши контактные данные.</h2>
           <fieldset class="info">
             <p class="info__form">
-              <label for="telephone">ТЕЛ</label>
+              <label class="info__title" for="telephone"><b>Тел</b></label>
               <input
-                class="field field--tel"
+                class="info__field field field--tel"
                 type="tel"
                 id="telephone"
                 name="telephone"
@@ -210,9 +211,9 @@
                 required>
             </p>
             <p class="info__form">
-              <label for="e-mail">E-MAIL</label>
+              <label class="info__title" for="e-mail"><b>E-mail</b></label>
               <input
-                class="field"
+                class="info__field field field--mail"
                 type="email"
                 id="e-mail"
                 name="e-mail"
@@ -222,11 +223,11 @@
           </fieldset>
         </div>
         <div class="main-container__form-wrapper">
-          <h2 class="visually-hidden">Укажите дополнительную информацию по заказу.</h2>
           <fieldset class="additionally">
+            <legend class="additionally__title">Доп</legend>
             <p class="additionally__group">
               <label class="visually-hidden" for="additionally-text">Опишите все ваши пожелания к заказу.</label>
-              <textarea class="additionally__field field" rows="9" cols="9" name="additionally-text" id="additionally-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="additionally__field field field--additionally" rows="9" cols="9" name="additionally-text" id="additionally-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </p>
           </fieldset>
           <span class="main-container__legend">*Поля обязательны для заполнения</span>
@@ -237,7 +238,6 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo main-footer__logo--clipped">
-          <h2 class="visually-hidden">Логитип компании и ссылка на главную страницу.</h2>
           <a class="main-footer__logo" href="index.html">
             <img
               class="logo"
@@ -248,7 +248,6 @@
           </a>
         </div>
         <div class="main-footer__social">
-          <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="social">
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
@@ -273,12 +272,12 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright">
+        <div class="main-footer__copyright copyright">
           <h2 class="visually-hidden">html academy.</h2>
-          <a class="main-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="main-footer__copyright-text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">Разработано</p>
             <img
-              class="copyright-img"
+              class="copyright__img"
               src="img/icons/htmlacademy.svg"
               width="27"
               height="34"
