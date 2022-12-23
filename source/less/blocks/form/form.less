@@ -1,0 +1,38 @@
+.form {
+  padding: 17px 30px 55px 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 54px 50px 50px 50px;
+  }
+}
+
+.form__description {
+  font-size: 13px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.form__legend {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__wrapper {
+  &:last-of-type {
+    margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:nth-child(even) {
+    @media (min-width: @tablet-width) {
+      background-color: #f1f1f1;
+    }
+  }
+}

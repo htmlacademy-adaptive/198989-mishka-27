@@ -1,5 +1,13 @@
 .info {
+  .normalize-title();
   border: none;
+  margin-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .info__title {
@@ -9,4 +17,15 @@
   text-transform: uppercase;
   color: @color-accent;
   .normalize-title();
+}
+
+.info__form {
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  &:last-child {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+  }
 }

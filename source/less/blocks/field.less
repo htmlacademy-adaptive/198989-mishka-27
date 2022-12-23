@@ -1,4 +1,5 @@
 .field {
+  display: block;
   font-size: 17px;
   line-height: 18px;
   color: @color-dark;
@@ -6,5 +7,9 @@
   &--additionally {
     font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
   }
 }

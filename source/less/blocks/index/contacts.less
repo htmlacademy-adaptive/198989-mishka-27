@@ -1,14 +1,69 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 38px 30px 39px 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 68px 50px 57px 50px;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 225px;
+  }
+}
+
 .contacts__title {
   font-size: 25px;
   line-height: 30px;
   color: @color-dark;
-  .normalize-title();
+  margin-top: 0;
+  margin-bottom: 28px;
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      background-image: url("../img/icons/flag.svg");
+      background-repeat: no-repeat;
+      width: 47px;
+      height: 81px;
+      position: absolute;
+      top: 46px;
+      right: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 113px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 35px;
+  }
 }
 
 .contacts__address {
   font-size: 14px;
   font-style: normal;
   line-height: 30px;
+  margin-bottom: 62px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    font-size: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .contacts__email {
@@ -17,6 +72,47 @@
   color: #444444;
 }
 
+.contacts__wrapper {
+  display: flex;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+}
+
+.contacts__address-title {
+  width: 44px;
+  margin-right: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 54px;
+    margin-right: 25px;
+  }
+}
+
 .contacts__address-text {
+  display: inline-block;
   .normalize-title();
+}
+
+.contacts__write {
+  order: 1;
+  margin-top: 42px;
+  margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    width: 230px;
+    margin-top: 55px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-self: flex-start;
+  }
 }

@@ -1,31 +1,103 @@
 .products {
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   background-image: url("../img/hero.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: top center;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 110px 50px 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+  }
 }
 
 .products__title {
+  display: block;
+  width: 260px;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
   color: @color-dark;
-  .normalize-title();
+  margin: 0 auto;
+  padding: 73px 30px 120px 30px;
+  box-sizing: content-box;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    font-size: 43px;
+    line-height: 50px;
+    text-align: center;
+    padding-bottom: 372px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .products__list {
   .normalize-list();
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    width: 668px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+  }
+}
+
+.products__item {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+}
+
+.products-links__wrapper {
+  background-color: @color-accent;
+  background-image: url("../img/icons/interior.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 88% 50%;
+
+  &--secondary {
+    background-color: #56c3b2;
+    background-image: url("../img/icons/toy.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 92% 50%;
+  }
 }
 
 .products__link {
   .normalize-link();
   display: block;
+  width: 50%;
   font-size: 19px;
   color: #ffffff;
-  background-color: @color-accent;
+  padding: 24px 160px 31px 30px;
 
-  &--secondary {
-    background-color: #56c3b2;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 25px 0 34px 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 33%;
   }
 }

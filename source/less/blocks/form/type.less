@@ -1,5 +1,10 @@
 .type {
   border: none;
+  .normalize-title();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .type__title {
@@ -13,4 +18,21 @@
 
 .type__list {
   .normalize-list();
+  margin-top: 30px;
+}
+
+.type__item {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.type-wrapper {
+  margin-top: 29px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 63px;
+  }
 }

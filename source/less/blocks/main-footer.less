@@ -3,5 +3,24 @@
 }
 
 .main-footer__logo--clipped {
-  .visually-hidden();
+  @media (max-width: 767px) {
+    .visually-hidden();
+  }
+}
+
+.main-footer__social {
+  padding: 25px 30px 0 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.main-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 51px 50px 58px 50px;
+  }
 }

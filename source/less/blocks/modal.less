@@ -1,8 +1,19 @@
+.modal {
+  text-align: center;
+}
+
 .modal__title {
+  max-width: 150px;
   font-size: 25px;
   line-height: 30px;
   color: @color-dark;
-  .normalize-title();
+  margin: 0 auto 14px auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 381px;
+    font-size: 30px;
+    line-height: 57px;
+  }
 }
 
 .modal__group {
@@ -12,11 +23,19 @@
 
 .modal__list {
   display: flex;
+  justify-content: center;
+  gap: 7px;
   .normalize-list();
+  margin-bottom: 31px;
 }
 
 .modal__group-title {
   line-height: 30px;
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .modal__item {
@@ -32,4 +51,13 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
+}
+
+.modal__add {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 350px;
+    margin: 0 auto;
+  }
 }

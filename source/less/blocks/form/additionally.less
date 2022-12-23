@@ -1,5 +1,11 @@
 .additionally {
   border: none;
+  .normalize-title();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-top: 50px;
+  }
 }
 
 .additionally__title {
@@ -9,4 +15,14 @@
   text-transform: uppercase;
   color: @color-accent;
   .normalize-title();
+}
+
+.additionally__group {
+  margin-top: 23px;
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 53px;
+  }
 }
