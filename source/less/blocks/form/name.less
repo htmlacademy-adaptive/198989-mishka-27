@@ -4,6 +4,7 @@
   margin-top: 33px;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     margin-top: 67px;
   }
 }
@@ -15,6 +16,16 @@
   text-transform: uppercase;
   color: @color-accent;
   .normalize-title();
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 60px;
+  }
 }
 
 .name__label {
@@ -25,13 +36,27 @@
 
   @media (min-width: @tablet-width) {
     font-size: 19px;
+    margin-right: 24px;
   }
 }
 
 .name__form {
+  margin-top: 0;
   margin-bottom: 22px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    margin-left: 25%;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 16%;
+    margin-left: 16%;
   }
 }

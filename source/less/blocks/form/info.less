@@ -17,6 +17,10 @@
   text-transform: uppercase;
   color: @color-accent;
   .normalize-title();
+
+  @media (min-width: @desktop-width) {
+    margin-left: 60px;
+  }
 }
 
 .info__form {
@@ -27,5 +31,16 @@
     @media (min-width: @tablet-width) {
       margin-bottom: 0;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 25% auto;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 16% auto;
+    margin-right: 16%;
   }
 }
