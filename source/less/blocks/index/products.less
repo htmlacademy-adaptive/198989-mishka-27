@@ -24,7 +24,6 @@
     font-size: 43px;
     line-height: 50px;
     text-align: center;
-
   }
 
   @media (min-width: @desktop-width) {
@@ -48,8 +47,6 @@
 }
 
 .products__item {
-
-
   @media (min-width: @tablet-width) {
     flex: 0 0 50%;
   }
@@ -70,6 +67,14 @@
   @media (min-width: @desktop-width) {
     background-position: 92% 50%;
   }
+
+  &:hover .products__link {
+    padding-top: +5px;
+  }
+
+  &:hover {
+    height: 108px;
+  }
 }
 
 .products__link {
@@ -85,9 +90,11 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    max-width: 140px;
+    padding: 25px 36px 34px 36px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 25px 35px 27px 36px;
+    padding: 25px 37px 34px 37px;
   }
 }
