@@ -9,10 +9,10 @@
 }
 
 .main-footer__social {
-  padding: 25px 30px 0 30px;
+  padding-top: 25px;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    padding-top: 0;
   }
 }
 
@@ -21,6 +21,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 51px 50px 58px 50px;
+    padding: 51px 0 58px 0;
+  }
+}
+
+.main-footer__link-logo {
+  fill: @color-dark;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
   }
 }

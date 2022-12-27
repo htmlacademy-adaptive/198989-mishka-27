@@ -12,10 +12,22 @@
   font-size: 19px;
   line-height: 1;
   .normalize-link();
+
+  &:hover .copyright__img {
+    fill: #46c1ae;
+  }
+
+  &:active .copyright__img {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
   align-self: center;
   margin: 0;
   padding-right: 27px;
+}
+
+.copyright__img {
+  fill: @color-accent;
 }
