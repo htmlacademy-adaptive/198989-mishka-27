@@ -1,8 +1,28 @@
+.about {
+  padding: 31px 0 58px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 56px 0 82px 0;
+  }
+}
+
 .about__title {
   font-size: 25px;
   line-height: 30px;
   color: @color-dark;
-  .normalize-title();
+  margin-top: 0;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 39px;
+  }
 }
 
 .about__list {
@@ -11,4 +31,73 @@
   line-height: 20px;
   color: @color-dark;
   .normalize-list();
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-row-gap: 57px;
+  }
+}
+
+.about__item {
+  &--materials {
+    background-image: url("../img/icons/materials.svg");
+    background-repeat: no-repeat;
+    background-size: 33px 38px;
+    padding-top: 54px;
+    padding-bottom: 30px;
+  }
+
+  &--style {
+    background-image: url("../img/icons/style.svg");
+    background-repeat: no-repeat;
+    background-size: 47px 27px;
+    padding-top: 53px;
+    padding-bottom: 35px;
+  }
+
+  &--likes {
+    background-image: url("../img/icons/likes.svg");
+    background-repeat: no-repeat;
+    background-size: 34px 27px;
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
+
+  &--handmade {
+    background-image: url("../img/icons/handmade.svg");
+    background-repeat: no-repeat;
+    background-size: 35px 34px;
+    padding-top: 51px;
+    padding-bottom: 33px;
+  }
+
+  &--support {
+    background-image: url("../img/icons/support.svg");
+    background-repeat: no-repeat;
+    background-size: 55px 23px;
+    padding-top: 49px;
+    padding-bottom: 32px;
+  }
+
+  &--gift {
+    background-image: url("../img/icons/gift.svg");
+    background-repeat: no-repeat;
+    background-size: 33px 32px;
+    padding-top: 52px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.about__description {
+  margin: 0;
+}
+
+.about__wrapper {
+  @media (min-width: @desktop-width) {
+    padding-left: 175px;
+  }
 }

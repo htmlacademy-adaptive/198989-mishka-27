@@ -1,5 +1,11 @@
 .additionally {
   border: none;
+  .normalize-title();
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    margin-top: 50px;
+  }
 }
 
 .additionally__title {
@@ -9,4 +15,34 @@
   text-transform: uppercase;
   color: @color-accent;
   .normalize-title();
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 60px;
+  }
+}
+
+.additionally__group {
+  margin-top: 23px;
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 53px;
+    margin-left: 25%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 16%;
+    margin-left: 14%;
+  }
+}
+
+.additionally__field {
+  padding: 17px;
 }

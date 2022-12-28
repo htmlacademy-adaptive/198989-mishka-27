@@ -1,11 +1,33 @@
+.copyright {
+  padding: 22px 30px 23px 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
 .copyright__link {
   display: flex;
+  justify-content: center;
   font-size: 19px;
-  line-height: 1px;
+  line-height: 1;
   .normalize-link();
+
+  &:hover .copyright__img {
+    fill: #46c1ae;
+  }
+
+  &:active .copyright__img {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
   align-self: center;
-  .normalize-title();
+  margin: 0;
+  padding-right: 27px;
+}
+
+.copyright__img {
+  fill: @color-accent;
 }

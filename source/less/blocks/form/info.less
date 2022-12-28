@@ -1,5 +1,13 @@
 .info {
+  .normalize-title();
   border: none;
+  margin-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .info__title {
@@ -9,4 +17,30 @@
   text-transform: uppercase;
   color: @color-accent;
   .normalize-title();
+
+  @media (min-width: @desktop-width) {
+    margin-left: 60px;
+  }
+}
+
+.info__form {
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  &:last-child {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 25% auto;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 16% auto;
+    margin-right: 16%;
+  }
 }

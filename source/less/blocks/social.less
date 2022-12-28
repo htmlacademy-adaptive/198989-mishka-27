@@ -1,4 +1,32 @@
 .social {
-  display: flex;
   .normalize-list();
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.social__item {
+  margin-right: 29px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__icon {
+  fill: #231f20;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

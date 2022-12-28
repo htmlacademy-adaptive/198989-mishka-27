@@ -1,31 +1,100 @@
 .products {
-  background-color: #ffffff;
+  padding-top: 73px;
+  background-color: #f9f9f9;
   background-image: url("../img/hero.jpg");
-  background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: top center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 154px;
+  }
 }
 
 .products__title {
+  min-height: 90px + 120px - 40px;
+  margin: 0 0 40px;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
   color: @color-dark;
-  .normalize-title();
+
+  @media (min-width: @tablet-width) {
+    min-height: 100px + 372px - 40px;
+    font-size: 43px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 114px + 355px - 40px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .products__list {
   .normalize-list();
+
+  @media (max-width: @mobile-width-only) {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.products__item {
+  @media (min-width: @tablet-width) {
+    flex: 0 0 50%;
+  }
+}
+
+.products-links__wrapper {
+  background-color: @color-accent;
+  background-image: url("../img/icons/interior.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 88% 50%;
+
+  &--secondary {
+    background-color: #56c3b2;
+    background-image: url("../img/icons/toy.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 92% 50%;
+  }
+
+  &:hover .products__link {
+    padding-top: +5px;
+  }
+
+  &:hover {
+    height: 108px;
+  }
 }
 
 .products__link {
   .normalize-link();
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 103px;
   font-size: 19px;
   color: #ffffff;
-  background-color: @color-accent;
+  padding: 23px 27px 18px 30px;
 
-  &--secondary {
-    background-color: #56c3b2;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 140px;
+    padding: 25px 36px 34px 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px 37px 34px 37px;
   }
 }

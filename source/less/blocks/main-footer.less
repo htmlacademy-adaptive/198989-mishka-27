@@ -3,5 +3,37 @@
 }
 
 .main-footer__logo--clipped {
-  .visually-hidden();
+  @media (max-width: 767px) {
+    .visually-hidden();
+  }
+}
+
+.main-footer__social {
+  padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.main-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 51px 0 58px 0;
+  }
+}
+
+.main-footer__link-logo {
+  fill: @color-dark;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }

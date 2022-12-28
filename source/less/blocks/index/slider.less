@@ -1,0 +1,54 @@
+.slider {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.slider__list {
+  @media (min-width: @tablet-width) {
+    grid-area: 2 / 1 / 4 / 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-area: 2 / 2 / 4 / 7;
+  }
+}
+
+.slider__button {
+  width: 50%;
+  height: 52px;
+  border: 1px solid #ececec;
+  background-color: #ffffff;
+  background-image: url("../img/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 50px 26px;
+  background-position: center;
+
+  &--next {
+    transform: rotate(180deg);
+    border-right: none;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 37px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 50px;
+    border: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
