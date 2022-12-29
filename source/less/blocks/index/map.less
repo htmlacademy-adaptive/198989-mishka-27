@@ -1,15 +1,13 @@
 .map {
+  position: relative;
+
   @media (min-width: @desktop-width) {
     grid-area: 1 / 4 / 3 / 7;
   }
 }
 
-.map__toggle {
-  border: none;
-  background-color: transparent;
-}
-
 .map__frame {
+  position: relative;
   border: none;
   display: block;
   width: 115%;
@@ -23,6 +21,18 @@
 
   @media (min-width: @desktop-width) {
     width: 100%;
+    height: 100%;
     margin: 0;
   }
+}
+
+.map__toggle {
+  position: absolute;
+  width: 67px;
+  height: 100px;
+  top: 30%;
+  left: 43%;
+  border: none;
+  background-color: transparent;
+  z-index: 1;
 }
