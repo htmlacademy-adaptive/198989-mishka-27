@@ -29,7 +29,9 @@
     }
 
     @media (min-width: @desktop-width) {
+      display: block;
       left: 6%;
+      top: 60px;
     }
   }
 
@@ -121,13 +123,13 @@
   @media (min-width: @tablet-width) {
     align-self: center;
     width: 230px;
-    margin-top: 55px;
-    margin-bottom: 0;
+    margin: 55px auto 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    align-self: flex-start;
+    align-self: flex-end;
     grid-area: 2 / 2 / 3 / 4;
+    margin-left: 0;
   }
 }
 
@@ -143,5 +145,6 @@
 .contact-text__wrapper {
   @media (min-width: @desktop-width) {
     grid-area: 1 / 2 / 2 / 4;
+    padding-top: 80px;
   }
 }

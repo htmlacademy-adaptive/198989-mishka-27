@@ -10,17 +10,33 @@
 }
 
 .name__title {
+  position: relative;
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
   color: @color-accent;
   .normalize-title();
+  margin-bottom: 29px;
+
+  &::after {
+    @media (max-width: @mobile-width-only) {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100% + 17px;
+      background-color: #62d1ba;
+      width: 90vw - 30px;
+      height: 1px;
+      z-index: -1;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 0;
     left: 0;
+    padding-top: 18px;
   }
 
   @media (min-width: @desktop-width) {
@@ -37,6 +53,7 @@
   @media (min-width: @tablet-width) {
     font-size: 19px;
     margin-right: 24px;
+    margin-bottom: 5px;
   }
 }
 

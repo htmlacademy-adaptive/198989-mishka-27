@@ -4,13 +4,35 @@
   font-size: 17px;
   line-height: 18px;
   color: @color-dark;
+  background-color: transparent;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border: none;
+  border-bottom: 2px solid #444444;
 
   &--additionally {
     font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
+    padding: 17px;
+    border: 2px solid #444444;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 19px;
+    padding: 16px 26px 18px 18px;
+  }
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &--additionally:focus {
+    outline: none;
+    border: 2px solid #62d1ba;
   }
 }

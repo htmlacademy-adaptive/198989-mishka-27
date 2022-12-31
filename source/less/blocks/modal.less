@@ -1,5 +1,18 @@
 .modal {
+  position: relative;
+  margin: auto 0 auto 0;
+  background-color: #fcfcfc;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border-top: 1px solid #c6c6c6;
   text-align: center;
+  padding: 29px 30px 46px 30px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin: auto;
+    padding: 38px 106px 46px 106px;
+  }
 }
 
 .modal__title {
@@ -8,6 +21,7 @@
   line-height: 30px;
   color: @color-dark;
   margin: 0 auto 14px auto;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     max-width: 381px;

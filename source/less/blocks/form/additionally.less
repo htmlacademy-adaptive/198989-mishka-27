@@ -9,12 +9,26 @@
 }
 
 .additionally__title {
+  position: relative;
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
   color: @color-accent;
   .normalize-title();
+
+  &::after {
+    @media (max-width: @mobile-width-only) {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100% + 19px;
+      background-color: #62d1ba;
+      width: 90vw - 30px;
+      height: 1px;
+      z-index: -1;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -41,8 +55,4 @@
     margin-right: 16%;
     margin-left: 14%;
   }
-}
-
-.additionally__field {
-  padding: 17px;
 }

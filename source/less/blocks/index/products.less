@@ -6,28 +6,52 @@
   background-position: top center;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     padding-top: 154px;
+
+    &::before {
+      content: "";
+      background-image: url("../img/zigzag-fill.svg");
+      background-size: auto;
+      background-repeat: repeat-x;
+      width: 100%;
+      height: 24px;
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      z-index: 1;
+
+      @media (min-width: @desktop-width) {
+        transform: scale(1.5);
+        bottom: -15px;
+      }
+    }
   }
 }
 
 .products__title {
-  min-height: 90px + 120px - 40px;
-  margin: 0 0 40px;
+  min-height: 90px + 120px - 35px;
+  margin: 0 0 35px;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   color: @color-dark;
 
+  @media (max-width: @mobile-width-only) {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
   @media (min-width: @tablet-width) {
-    min-height: 100px + 372px - 40px;
+    min-height: 100px + 372px - 35px;
     font-size: 43px;
     line-height: 50px;
     text-align: center;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 114px + 355px - 40px;
+    min-height: 114px + 355px - 35px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -43,37 +67,47 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    align-items: flex-end;
   }
 }
 
 .products__item {
+  position: relative;
+  padding-top: 5px;
+  margin-bottom: -5px;
+
   @media (min-width: @tablet-width) {
     flex: 0 0 50%;
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+
+  &--secondary:hover {
+    background-color: #46c1ae;
   }
 }
 
 .products-links__wrapper {
+  position: relative;
   background-color: @color-accent;
-  background-image: url("../img/icons/interior.svg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: 88% 50%;
 
   &--secondary {
     background-color: #56c3b2;
-    background-image: url("../img/icons/toy.svg");
   }
 
   @media (min-width: @desktop-width) {
     background-position: 92% 50%;
   }
 
-  &:hover .products__link {
-    padding-top: +5px;
+  &:hover {
+    background-color: #59d5bc;
   }
 
-  &:hover {
-    height: 108px;
+  &--secondary:hover {
+    background-color: #46c1ae;
   }
 }
 
@@ -87,14 +121,79 @@
   color: #ffffff;
   padding: 23px 27px 18px 30px;
 
+  &::after {
+    content: url("../img/icons/interior.svg");
+    position: absolute;
+    top: 23px;
+    right: 36px;
+    width: 40px;
+    height: 62px;
+    opacity: 0.5;
+
+    @media (min-width: @tablet-width) {
+      top: 30px;
+    }
+  }
+
+  &--secondary::after {
+    content: url("../img/icons/toy.svg");
+    position: absolute;
+    top: 21px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+
+    @media (min-width: @tablet-width) {
+      top: 31px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    max-width: 140px;
     padding: 25px 36px 34px 36px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 25px 37px 34px 37px;
+  }
+
+  &:hover {
+    padding-top: 18px;
+    padding-bottom: 23px;
+
+    &::after {
+      top: 18px;
+      opacity: 0.7;
+
+      @media (min-width: @tablet-width) {
+        top: 25px;
+      }
+    }
+
+    &--secondary::after {
+      top: 16px;
+      opacity: 0.7;
+
+      @media (min-width: @tablet-width) {
+        top: 26px;
+      }
+    }
+
+    @media (min-width: @tablet-width) {
+      padding-top: 20px;
+      padding-bottom: 39px;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
+
+    &--secondary::after {
+      opacity: 0.3;
+    }
   }
 }
