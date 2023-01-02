@@ -1,13 +1,14 @@
 .promo {
   position: relative;
   padding: 31px 0 36px 0;
+  overflow: hidden;
 
   &::before {
     content: "";
     background-image: url("../img/zigzag-line.svg");
     background-size: auto;
     background-repeat: repeat-x;
-    width: 100%;
+    width: 100vw;
     height: 6px;
     position: absolute;
     bottom: 0;
@@ -15,10 +16,12 @@
 
     @media (min-width: @tablet-width) {
       transform: scale(2);
+      height: 17px;
     }
 
     @media (min-width: @desktop-width) {
       transform: scale(3);
+      height: 17px;
     }
   }
 
@@ -75,31 +78,31 @@
 
 .promo__title {
   font-size: 25px;
-  line-height: 30px;
+  line-height: 1;
   color: @color-dark;
   .normalize-title();
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
-    line-height: 50px;
+    line-height: 1;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
-    line-height: 57px;
+    line-height: 1;
   }
 }
 
 .promo__remark {
   font-size: 17px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 1;
   text-transform: uppercase;
   color: @color-accent;
 
   @media (min-width: @tablet-width) {
     width: 100px;
-    line-height: 17px;
+    line-height: 1;
     text-align: center;
   }
 

@@ -2,6 +2,7 @@
   background-color: #f1f1f1;
   padding: 74px 0 74px 0;
   text-align: center;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -9,11 +10,10 @@
 
     &::before {
       content: "";
-
       background-image: url("../img/zigzag-fill.svg");
       background-size: auto;
       background-repeat: repeat-x;
-      width: 100%;
+      width: 100vw;
       height: 24px;
       position: absolute;
       bottom: -12px;

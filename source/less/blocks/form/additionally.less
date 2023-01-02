@@ -9,30 +9,29 @@
 }
 
 .additionally__title {
-  position: relative;
+  display: flex;
   font-size: 17px;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 1;
   text-transform: uppercase;
   color: @color-accent;
+  width: 100%;
   .normalize-title();
 
   &::after {
     @media (max-width: @mobile-width-only) {
       content: "";
-      position: absolute;
-      top: 50%;
-      left: 100% + 19px;
+      flex: 1 0 auto;
       background-color: #62d1ba;
-      width: 90vw - 30px;
       height: 1px;
-      z-index: -1;
+      margin-top: 8px;
+      margin-left: 20px;
     }
   }
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 0;
+    top: 16px;
     left: 0;
   }
 

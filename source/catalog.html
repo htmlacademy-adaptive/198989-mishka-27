@@ -6,7 +6,9 @@
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="header">
@@ -77,7 +79,7 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <a class="catalog__item-link" href="#">
-                <div class="catalog-image__wrapper">
+                <div class="catalog__image-wrapper">
                   <img
                     class="catalog__item-image"
                     src="img/catalog/bunny.jpg"
@@ -86,7 +88,7 @@
                     alt="Вязаный зайчик.">
                 </div>
               </a>
-              <div class="catalog-description__wrapper">
+              <div class="catalog__description-wrapper">
                 <a class="catalog__link" href="#">
                   <h3 class="catalog__link-title">Зайчик&#8288;-&#8288;попрыгайчик</h3>
                 </a>
@@ -102,7 +104,7 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__item-link" href="#">
-                <div class="catalog-image__wrapper">
+                <div class="catalog__image-wrapper">
                   <img
                     class="catalog__item-image"
                     src="img/catalog/basket.jpg"
@@ -111,7 +113,7 @@
                     alt="Вязаный зайчик.">
                 </div>
               </a>
-              <div class="catalog-description__wrapper">
+              <div class="catalog__description-wrapper">
                 <a class="catalog__link" href="#">
                   <h3 class="catalog__link-title">Корзинка для белья</h3>
                 </a>
@@ -127,7 +129,7 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__item-link" href="#">
-                <div class="catalog-image__wrapper">
+                <div class="catalog__image-wrapper">
                   <img
                     class="catalog__item-image"
                     src="img/catalog/big-basket.jpg"
@@ -136,7 +138,7 @@
                     alt="Вязаный зайчик.">
                 </div>
               </a>
-              <div class="catalog-description__wrapper">
+              <div class="catalog__description-wrapper">
                 <a class="catalog__link" href="#">
                   <h3 class="catalog__link-title">Большая корзинка<br>для игрушек</h3>
                 </a>
@@ -228,7 +230,7 @@
     </footer>
 
     <!-- Чтобы модальное окно не отображалось, необходимо удалить класс-модификатор modal-container- -active -->
-    <div class="modal-container modal-container--active">
+    <div class="modal-container modal-container--closed">
       <section class="modal">
         <h2 class="modal__title">Добавить в корзину</h2>
         <fieldset class="modal__group">
