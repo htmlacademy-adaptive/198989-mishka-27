@@ -116,7 +116,7 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    max-width: 264px;
+    //max-width: 264px;
   }
 
   @media (min-width: @desktop-width) {
@@ -130,6 +130,7 @@
   @media (min-width: @tablet-width) {
     grid-area: description;
     width: 2fr;
+    margin-right: 42px;
   }
 
   @media (min-width: @desktop-width) {
@@ -143,7 +144,6 @@
   margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
-    max-width: 292px;
     margin-top: 48px;
     margin-bottom: 70px;
   }
@@ -170,14 +170,6 @@
   height: auto;
 
   @media (min-width: @tablet-width) {
-    grid-area: image;
-    width: 2fr;
-    align-self: end;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-area: 1 / 4 / 6 / 7;
-    order: -2;
     height: 100%;
   }
 }
@@ -194,6 +186,7 @@
     margin-top: 0;
     margin-right: 42px;
     margin-bottom: 33px;
+    align-self: end;
   }
 
   @media (min-width: @desktop-width) {
@@ -205,6 +198,7 @@
 
 .promo__order {
   @media (min-width: @tablet-width) {
+    align-self: end;
     grid-area: order;
     margin-right: 42px;
     height: 52px;
@@ -212,5 +206,21 @@
 
   @media (min-width: @desktop-width) {
     grid-area: 5 / 2 / 6 / 4;
+  }
+}
+
+.promo picture {
+  @media (min-width: @tablet-width) {
+    grid-area: image;
+    align-self: end;
+    vertical-align: bottom;
+    margin-bottom: -6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-area: 1 / 4 / 6 / 7;
+    order: -2;
+    height: 100%;
+    margin-bottom: 0;
   }
 }
