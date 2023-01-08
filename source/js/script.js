@@ -17,30 +17,21 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-cart.addEventListener('click', function () {
-  if (modal.classList.contains('modal-container--closed')) {
-    modal.classList.remove('modal-container--closed');
-    modal.classList.add('modal-container--opened');
-  }
-});
+//modal
+const modalOpened = 'modal-container--opened';
 
-modalButton.addEventListener('click', function () {
-  if (modal.classList.contains('modal-container--opened')) {
-    modal.classList.remove('modal-container--opened');
-    modal.classList.add('modal-container--closed');
-  }
-});
+const orderBtnElement = document.querySelector('.order-js');
+const modalElement = document.querySelector('.modal-js');
 
-modal.addEventListener('click', function () {
-  if (modal.classList.contains('modal-container--opened')) {
-    modal.classList.remove('modal-container--opened');
-    modal.classList.add('modal-container--closed');
-  }
-});
+if (orderBtnElement && modalElement) {
+  orderBtnElement.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    modalElement.classList.add(modalOpened);
+  });
 
-order.addEventListener('click', function () {
-  if (modal.classList.contains('modal-container--closed')) {
-    modal.classList.remove('modal-container--closed');
-    modal.classList.add('modal-container--opened');
-  }
-});
+  modalElement.addEventListener('click', (evt) => {
+    if (evt.target === modalElement) {
+      modalElement.classList.remove(modalOpened);
+    }
+  });
+}

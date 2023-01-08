@@ -20,8 +20,8 @@
   width: 100%;
   .normalize-title();
 
-  &::after {
-    @media (max-width: @mobile-width-only) {
+  @media (max-width: @mobile-width-only) {
+    &::after {
       content: "";
       flex: 1 0 auto;
       background-color: #62d1ba;

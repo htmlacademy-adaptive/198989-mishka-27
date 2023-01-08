@@ -43,7 +43,7 @@
   justify-content: center;
   font-size: 17px;
   line-height: 1;
-  padding: 29px 26px 27px 0;
+  padding: 29px 0 27px 0;
   .normalize-link();
 
   @media (min-width: @tablet-width) {
@@ -89,6 +89,13 @@
 }
 
 .user-list__link-wrap {
+  @media (max-width: @mobile-width-only) {
+    display: inline-block;
+    min-width: 320px;
+    padding: 0 20px 0 30px;
+    text-align: left;
+  }
+
   &--clipped {
     @media (min-width: @tablet-width) {
       .visually-hidden();

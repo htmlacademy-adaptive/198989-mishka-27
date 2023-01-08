@@ -55,17 +55,6 @@
     background-repeat: no-repeat;
     width: 100px;
     height: 100px;
-
-    @media (min-width: @tablet-width) {
-      top: 0;
-      left: -65px;
-    }
-
-    @media (min-width: @desktop-width) {
-      grid-area: 1 / 5 / 2 / 7;
-      top: -49px;
-      left: 0;
-    }
   }
 
   @media (min-width: @tablet-width) {
@@ -73,12 +62,23 @@
     max-width: 100%;
     font-size: 20px;
     margin: 41px auto 25px 107px;
+
+    &::after {
+      top: 0;
+      left: -65px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     grid-area: 1 / 5 / 2 / 7;
     margin: 96px auto 0 62px;
     max-width: 178px;
+
+    &::after {
+      grid-area: 1 / 5 / 2 / 7;
+      top: -49px;
+      left: 0;
+    }
   }
 }
 

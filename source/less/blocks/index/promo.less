@@ -13,25 +13,25 @@
     position: absolute;
     bottom: 0;
     left: 0;
-
-    @media (min-width: @tablet-width) {
-      transform: scale(2);
-      height: 17px;
-    }
-
-    @media (min-width: @desktop-width) {
-      transform: scale(3);
-      height: 17px;
-    }
   }
 
   @media (min-width: @tablet-width) {
     padding: 40px 0 52px 0;
+
+    &::before {
+      transform: scale(2);
+      height: 17px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 54px;
     padding-bottom: 73px;
+
+    &::before {
+      transform: scale(3);
+      height: 17px;
+    }
   }
 }
 

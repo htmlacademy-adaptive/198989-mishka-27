@@ -78,6 +78,12 @@
 
 .site-list__link-wrap {
   display: inline-block;
+
+  @media (max-width: @mobile-width-only) {
+    min-width: 320px;
+    padding: 0 20px 0 76px;
+    text-align: left;
+  }
 }
 
 .site-list__catalog {
