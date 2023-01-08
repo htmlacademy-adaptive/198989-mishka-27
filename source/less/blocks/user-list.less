@@ -75,13 +75,21 @@
 }
 
 .user-list__icon {
-  margin-right: 25px;
+  margin-right: 21px;
+
+  @media (max-width: @mobile-width-only) {
+    margin-left: 3px;
+  }
 
   @media (min-width: @tablet-width) {
     margin-right: 0;
   }
 
   &--cart {
+    @media (max-width: @mobile-width-only) {
+      margin-left: 0;
+    }
+
     @media (min-width: @tablet-width) {
       margin-right: 30px;
     }
