@@ -18,7 +18,7 @@
 .modal__title {
   max-width: 150px;
   font-size: 25px;
-  line-height: 30px;
+  line-height: 1;
   color: @color-dark;
   margin: 0 auto 14px auto;
   text-transform: uppercase;
@@ -52,7 +52,7 @@
   }
 }
 
-.modal__item {
+.modal__control-mark {
   padding: 18px 32px;
   border: 2px solid rgba(68, 68, 68, 0.1);
 
@@ -72,7 +72,7 @@
 .modal__control {
   font-size: 17px;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 1;
 }
 
 .modal__add {
@@ -82,4 +82,8 @@
     width: 350px;
     margin: 0 auto;
   }
+}
+
+.modal__control-input[type="radio"]:checked + .modal__control-mark {
+  border-color: rgba(99, 209, 187, 1);
 }

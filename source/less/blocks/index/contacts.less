@@ -2,10 +2,36 @@
   display: flex;
   flex-direction: column;
   padding: 38px 0 39px 0;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    background-image: url("../img/zigzag-line.svg");
+    background-size: auto;
+    background-repeat: repeat-x;
+    width: 100vw;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 68px 0 57px 0;
     position: relative;
+
+    &::before {
+      transform: scale(2);
+      top: 17px;
+      height: 17px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      transform: scale(3);
+    }
   }
 }
 
@@ -16,8 +42,12 @@
   margin-top: 0;
   margin-bottom: 28px;
 
-  &::after {
-    @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 49px;
+
+    &::after {
       content: "";
       background-image: url("../img/icons/flag.svg");
       background-repeat: no-repeat;
@@ -27,24 +57,18 @@
       top: -22px;
       right: 50px;
     }
-
-    @media (min-width: @desktop-width) {
-      display: block;
-      left: 6%;
-      top: 60px;
-    }
-  }
-
-  @media (min-width: @tablet-width) {
-    font-size: 43px;
-    line-height: 50px;
-    margin-bottom: 49px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 35px;
+
+    &::after {
+      display: block;
+      left: 6%;
+      top: 60px;
+    }
   }
 }
 

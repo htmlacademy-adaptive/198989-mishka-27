@@ -30,22 +30,9 @@
   margin-top: 22px;
   margin-bottom: 22px;
 
-  &::after {
-    @media (max-width: @mobile-width-only) {
-      content: "";
-      background-image: url("../img/logo-line.svg");
-      width: 79px;
-      height: 3px;
-      position: absolute;
-      top: 31px;
-      left: 0;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     width: 113px;
     height: 46px;
-    background-image: url("../img/logo-back.svg");
     padding: 4px 8px 9px 8px;
     margin-top: 0;
     margin-bottom: 0;
@@ -58,8 +45,7 @@
     left: 43%;
     width: 149px;
     height: 72px;
-    background-image: url("../img/logo-rays.svg");
-    padding: 18px 21px 20px 25px;
+    padding: 0 21px 20px 25px;
   }
 
   &:hover {
@@ -68,6 +54,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:visited {
+    color: @color-dark;
   }
 }
 
