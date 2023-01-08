@@ -35,3 +35,19 @@ if (orderBtnElement && modalElement) {
     }
   });
 }
+
+//catalog
+const orderBtnElements = document.querySelectorAll('.card-js');
+
+orderBtnElements.forEach((orderBtnElement) => {
+  orderBtnElement.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    modalElement.classList.add(modalOpened);
+  });
+
+  modalElement.addEventListener('click', (evt) => {
+    if (evt.target === modalElement) {
+      modalElement.classList.remove(modalOpened);
+    }
+  });
+});
