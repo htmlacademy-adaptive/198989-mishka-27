@@ -1,9 +1,5 @@
 let navMain = document.querySelector('.navigation');
 let navToggle = document.querySelector('.navigation__toggle');
-let modal = document.querySelector('.modal-container');
-let cart = document.querySelector('.catalog__cart');
-let modalButton = document.querySelector('.modal__add');
-let order = document.querySelector('.promo__order');
 
 navMain.classList.remove('navigation--nojs');
 
