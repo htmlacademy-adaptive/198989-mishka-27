@@ -74,7 +74,7 @@
   width: 23px;
   height: 16px;
   border: none;
-  background-image: url("../img/icons/tick.svg");
+  background-image: url("../img/sprite.svg#tick");
   background-repeat: no-repeat;
   background-size: 23px 16px;
   content: "";
@@ -102,4 +102,8 @@
   @media (min-width: @desktop-width) {
     padding-left: 28px;
   }
+}
+
+.control:focus-within .control__mark {
+  outline: 2px solid @color-accent;
 }

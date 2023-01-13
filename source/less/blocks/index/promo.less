@@ -26,11 +26,10 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 54px;
-    padding-bottom: 73px;
+    padding-bottom: 0;
 
     &::before {
-      transform: scale(3);
-      height: 17px;
+      display: none;
     }
   }
 }
@@ -51,6 +50,21 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, auto);
+    padding-bottom: 73px;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-image: url("../img/zigzag-line.svg");
+      background-size: auto 100%;
+      background-repeat: repeat-x;
+      position: absolute;
+      width: 1050px;
+      margin-right: auto;
+      margin-left: auto;
+      height: 17px;
+      bottom: 0;
+    }
   }
 }
 

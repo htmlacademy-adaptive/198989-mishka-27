@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -52,7 +52,7 @@
                       <svg class="user-list__icon" aria-hidden="true" focusable="false" width="18" height="18" fill="currentColor" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                         <path d="m17.6932 16.0568-3.4773-3.4773C15.2386 11.25 15.75 9.6136 15.75 7.875 15.75 3.4773 12.2727 0 7.875 0S0 3.4773 0 7.875s3.4773 7.875 7.875 7.875c1.7386 0 3.375-.6136 4.7045-1.5341l3.4773 3.4773c.2046.2045.4091.3068.8182.3068.6136 0 1.125-.5114 1.125-1.125 0-.2045-.1023-.5114-.3068-.8182ZM2.25 7.875c0-3.0682 2.5568-5.625 5.625-5.625S13.5 4.8068 13.5 7.875 10.9432 13.5 7.875 13.5 2.25 10.9432 2.25 7.875Z" opacity=".2"/></svg>
                         <span class="visually-hidden">Поиск.</span>
-                      <span class="user-list__link-wrap--clipped">Поиск по сайту</span>
+                      <span class="user-list__item-search">Поиск по сайту</span>
                     </span>
                   </a>
                 </li>
@@ -78,12 +78,12 @@
           <h2 class="products__title">Милые штуки ручной<br>работы для дома</h2>
           <ul class="products__list">
             <li class="products__item">
-              <div class="products-links__wrapper">
+              <div class="products__wrapper">
                 <a class="products__link" href="#">Предметы<br>интерьера</a>
               </div>
             </li>
             <li class="products__item products__item--secondary">
-              <div class="products-links__wrapper products-links__wrapper--secondary">
+              <div class="products__wrapper products__wrapper--secondary">
                 <a class="products__link products__link--secondary" href="#">Детские<br>игрушки</a>
               </div>
             </li>
@@ -116,6 +116,9 @@
             </div>
             <div class="promo__poster-wrap">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/triple-set-desktop.webp 1x, img/catalog/triple-set-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/triple-set-tablet.webp 1x, img/catalog/triple-set-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/triple-set.webp 1x, img/catalog/triple-set@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/catalog/triple-set-desktop.jpg 1x, img/catalog/triple-set-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/triple-set-tablet.jpg 1x, img/catalog/triple-set-tablet@2x.jpg 2x">
                 <img class="promo__image" src="img/catalog/triple-set.jpg" srcset="img/catalog/triple-set@2x.jpg 2x" width="260" height="315" alt="Вязанные корзинки ручной работы разных цветов.">
@@ -178,15 +181,15 @@
       </section>
       <section class="contacts">
         <div class="container">
-          <div class="contact__wrapper">
-            <div class="contact-text__wrapper">
+          <div class="contacts__wrapper">
+            <div class="contacts__wrapper-text">
               <h2 class="contacts__title">Контакты</h2>
               <address class="contacts__address">
-                <div class="contacts-info__wrapper">
+                <div class="contacts__wrapper-info">
                   <span class="contacts__address-title">e-mail:</span>
                   <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
                 </div>
-                <div class="contacts-info__wrapper">
+                <div class="contacts__wrapper-info">
                   <span class="contacts__address-title">адрес:</span>
                   <p class="contacts__address-text">г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</p>
                 </div>
@@ -231,7 +234,7 @@
               <li class="social__item">
                 <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Страница HTML Academy ВКонтакте.">
                   <svg class="social__icon" aria-hidden="true" focusable="false" width="28" height="23">
-                    <use href="img/sprite.svg#vk"></use></svg>
+                    <use href="img/sprite.svg#vkontakte"></use></svg>
                 </a>
               </li>
               <li class="social__item">
