@@ -7,6 +7,7 @@
   background-position-x: center;
   background-position-y: -17px;
   overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 
 
   @media (min-resolution: 2dppx) {
@@ -16,7 +17,7 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    padding-top: 154px;
+    padding-top: 158px;
     background-image: url("../img/hero-desktop.jpg");
     background-position-y: top;
 
@@ -69,9 +70,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 114px + 355px - 35px;
+    min-height: 114px + 350px - 35px;
     font-size: 53px;
-    line-height: 1;
+    line-height: 57px;
   }
 }
 
@@ -176,6 +177,7 @@
 
     &--secondary::after {
       top: 31px;
+      right: 34px;
     }
   }
 
