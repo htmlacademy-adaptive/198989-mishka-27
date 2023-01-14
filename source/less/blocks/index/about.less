@@ -1,8 +1,8 @@
 .about {
-  padding: 31px 0 58px 0;
+  padding: 37px 0 60px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 56px 0 82px 0;
+    padding: 44px 0 82px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,12 +21,12 @@
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 39px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 39px;
   }
 }
 
@@ -96,6 +96,28 @@
     padding-top: 52px;
   }
 
+  @media (max-width: @mobile-width-only) {
+    &--materials {
+      background-position: 7px 0;
+    }
+
+    &--likes {
+      background-position: 7px 0;
+    }
+
+    &--handmade {
+      background-position: 3px 0;
+    }
+
+    &--support {
+      background-position: -3px 0;
+    }
+
+    &--gift {
+      background-position: 3px 0;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
 
@@ -135,6 +157,7 @@
 
 .about__description {
   margin: 0;
+  line-height: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
