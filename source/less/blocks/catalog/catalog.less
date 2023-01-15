@@ -5,11 +5,12 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 78px;
+    padding-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 128px;
-    padding-bottom: 60px;
+    padding-top: 129px;
+    padding-bottom: 56px;
   }
 }
 
@@ -35,12 +36,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    margin-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
+    height: 661px;
   }
 
   &:hover {
@@ -71,7 +74,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 26px 26px 0 27px;
+    margin: 27px 26px auto 27px;
     height: 100%;
   }
 }
@@ -96,10 +99,11 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    padding-bottom: 6px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 13px;
+    padding-bottom: 6px;
   }
 }
 
@@ -114,7 +118,12 @@
   @media (min-width: @tablet-width) {
     font-size: 15px;
     padding-bottom: auto;
+    line-height: 30px;
     border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -145,7 +154,7 @@
   padding: 22px 27px 27px 28px;
 
   @media (min-width: @tablet-width) {
-    padding: 24px 33px 26px 33px;
+    padding: 25px 31px 25px 33px;
     align-self: end;
     grid-area: 1 / 2 / 2 / 3;
   }
@@ -153,7 +162,8 @@
   @media (min-width: @desktop-width) {
     width: 100%;
     border-top: none;
-    padding: 18px 31px 20px 27px;
+    padding: 23px 31px 25.5px 27px;
+    height: 72px;
   }
 }
 
@@ -168,10 +178,11 @@
   height: auto;
 
   @media (min-width: @tablet-width) {
+    display: block;
     height: 100%;
   }
 
   @media (min-width: @desktop-width) {
-    height: auto;
+    min-height: 462px;
   }
 }
