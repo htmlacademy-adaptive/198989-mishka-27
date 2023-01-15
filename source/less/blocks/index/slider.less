@@ -33,15 +33,31 @@
   &--next {
     transform: rotate(180deg);
     border-right: none;
-
-    @media (min-width: @tablet-width) {
-      margin-left: 37px;
-    }
   }
 
   @media (min-width: @tablet-width) {
     width: 50px;
     border: none;
+
+    &--prev {
+      margin-left: -10px;
+      margin-right: 25px;
+    }
+
+    &--next {
+      margin-left: 10px;
+    }
+
+    @media (min-width: @desktop-width) {
+      &--prev {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      &--next {
+        margin-left: 37px;
+      }
+    }
   }
 
   &:hover {

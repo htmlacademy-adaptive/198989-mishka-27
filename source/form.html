@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -61,7 +62,7 @@
                     <span class="user-list__link-wrap">
                       <svg class="user-list__icon user-list__icon--cart" aria-hidden="true" focusable="false" width="21" height="18" fill="currentColor" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.1884 6.8572h-3.5507L13.1884.3809c-.2029-.381-.6087-.4761-1.0145-.2857-.4058.1905-.5072.5715-.3043.9524l3.1449 5.8096H5.7826l3.145-5.8096c.2028-.381 0-.7619-.3044-.9524-.4058-.1904-.8116 0-1.0145.2857L4.1594 6.8572H.8116C.4058 6.8572 0 7.1429 0 7.619c0 .381.3043.762.8116.762h.2029l.913 2.8571c-.2029.0952-.3043.2857-.3043.5714 0 .381.3043.6667.7101.6667L4.058 18h12.884l1.7247-5.5238c.4058 0 .7101-.2857.7101-.6667 0-.1905-.1014-.4762-.3043-.5714l.913-2.8572h.2029c.4058 0 .8116-.2857.8116-.7619 0-.4761-.4058-.7618-.8116-.7618Zm-4.5652 9.619H5.0725L3.855 12.381H16.942l-1.3188 4.0952Zm1.6232-5.5238H3.3478l-.8116-2.6667H18.058l-.8116 2.6667Z" opacity=".2"/></svg>
-                        Корзина: &thinsp;<span class="user-list__item-cart">пока пуста</span>
+                        Корзина: <span class="user-list__item-cart">пока пуста</span>
                     </span>
                   </a>
                 </li>
@@ -251,7 +252,7 @@
                 <legend class="additionally__title">Доп</legend>
                 <p class="additionally__group">
                   <label class="visually-hidden" for="additionally-text">Опишите все ваши пожелания к заказу.</label>
-                  <textarea class="additionally__field field field--additionally" rows="8" cols="9" name="additionally-text" id="additionally-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                  <textarea class="additionally__field field field--additionally" rows="6" cols="9" name="additionally-text" id="additionally-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </p>
               </fieldset>
               <span class="form__legend">*Поля обязательны для заполнения</span>

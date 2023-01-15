@@ -5,8 +5,9 @@
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: -17px;
+  background-position-y: -23px;
   overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 
 
   @media (min-resolution: 2dppx) {
@@ -40,6 +41,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 158px;
+
     &::before {
       transform: scale(1.5);
       bottom: -15px;
@@ -48,11 +51,11 @@
 }
 
 .products__title {
-  min-height: 90px + 120px;
+  min-height: 90px + 114px;
   margin: 0 0 35px;
   font-weight: 700;
   font-size: 27px;
-  line-height: 1;
+  line-height: 30px;
   text-align: center;
   color: @color-dark;
 
@@ -62,16 +65,16 @@
   }
 
   @media (min-width: @tablet-width) {
-    min-height: 100px + 372px - 35px;
+    min-height: 100px + 366px - 35px;
     font-size: 43px;
-    line-height: 1;
+    line-height: 50px;
     text-align: center;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 114px + 355px - 35px;
+    min-height: 114px + 350px - 35px;
     font-size: 53px;
-    line-height: 1;
+    line-height: 57px;
   }
 }
 
@@ -165,6 +168,10 @@
     opacity: 0.5;
   }
 
+  @media (max-width: @mobile-width-only) {
+    padding-top: 12px;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -176,6 +183,7 @@
 
     &--secondary::after {
       top: 31px;
+      right: 34px;
     }
   }
 
