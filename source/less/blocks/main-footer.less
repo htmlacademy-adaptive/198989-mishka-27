@@ -9,7 +9,7 @@
 }
 
 .main-footer__social {
-  padding-top: 25px;
+  padding-top: 26px;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
@@ -21,12 +21,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 51px 0 58px 0;
+    padding: 49px 0 58px 0;
   }
 }
 
 .main-footer__link-logo {
   fill: @color-dark;
+
+  @media (min-width: @tablet-width) {
+    width: 102px;
+    height: 34px;
+  }
 
   &:hover {
     fill: #46c1ae;
@@ -35,5 +40,11 @@
   &:active {
     fill: #46c1ae;
     opacity: 0.3;
+  }
+}
+
+.main-footer__copyright {
+  @media (min-width: @tablet-width) {
+    margin-top: -5px;
   }
 }

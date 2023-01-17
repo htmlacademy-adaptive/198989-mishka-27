@@ -47,14 +47,15 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px 48px;
+    gap: 24px 22px;
     margin-left: 25%;
     margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 16%;
-    grid-template-columns: repeat(3, 1fr);
+    margin-left: 16.7%;
+    grid-template-columns: 29.9% 30.2% 33%;
+    gap: 24px 0;
   }
 }
 
@@ -74,8 +75,12 @@
   margin-top: 31px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 67px;
+    margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 48px;
   }
 }

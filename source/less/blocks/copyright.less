@@ -1,5 +1,5 @@
 .copyright {
-  padding: 22px 30px 23px 30px;
+  padding: 21px 30px 23px 30px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -26,8 +26,18 @@
   align-self: center;
   margin: 0;
   padding-right: 27px;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 30px;
+  }
 }
 
 .copyright__img {
   fill: @color-accent;
+  transform: scale(1.5);
+
+  @media (min-width: @tablet-width) {
+    width: 27px;
+    height: 34px;
+  }
 }
