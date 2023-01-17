@@ -51,8 +51,9 @@
 
 .control__input[type="radio"]:checked + .control__mark::before {
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
   background-color: #62d1ba;
@@ -60,8 +61,6 @@
   content: "";
 
   @media (min-width: @tablet-width) {
-    top: 28%;
-    left: 28%;
     width: 23px;
     height: 23px;
   }
